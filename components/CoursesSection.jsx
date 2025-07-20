@@ -170,18 +170,16 @@ const CoursesSection = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-6 pt-4 border-t border-gray-200">
-          <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-semibold transition-colors duration-200 shadow-md hover:shadow-lg">
-            Learn More
-          </button>
-        </div>
       </div>
     </div>
   );
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id='courses' className="py-20 bg-gray-50 coursesSection">
+      <div className='underCoursesSection'>
+        <h1>In-Demand Courses</h1>
+        <p>Specialized courses to enhance your technical skills and career prospects</p>
+      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Computer Science Courses Section */}
@@ -236,23 +234,6 @@ const CoursesSection = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Ready to Start Your Learning Journey?</h3>
-            <p className="text-lg text-gray-600 mb-8">
-              Join thousands of students who have transformed their careers with our expert-led courses
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl">
-                View All Courses
-              </button>
-              <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200">
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
