@@ -179,7 +179,7 @@ const CoursesSection = () => {
 
   const CourseCard = ({ course, index, bgColor }) => (
     <div
-      className={`course-card ${bgColor} rounded-xl shadow-lg hover:shadow-xl transition-all duration-700 transform hover:-translate-y-2 overflow-hidden border border-gray-100 opacity-0 translate-y-8 ${visibleCards.has(index) ? 'animate-fade-in-up' : ''}`}
+      className={`course-card ${bgColor} rounded-xl shadow-lg hover:shadow-xl transition-all duration-700 transform hover:-translate-y-2 overflow-hidden border border-gray-100  translate-y-8 `}
       style={{
         animationDelay: `${index * 150}ms`,
         animationFillMode: 'forwards'
@@ -244,7 +244,6 @@ const CoursesSection = () => {
                 key={index} 
                 course={course} 
                 index={index} 
-                bgColor="bg-gradient-to-br from-blue-50 to-indigo-50"
               />
             ))}
           </div>
@@ -270,7 +269,7 @@ const CoursesSection = () => {
                 key={index} 
                 course={course} 
                 index={index} 
-                bgColor="bg-gradient-to-br from-orange-50 to-red-50"
+                
               />
             ))}
           </div>
