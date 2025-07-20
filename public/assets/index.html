@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Institution - Quality Technical Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        
+        .nav-link:hover {
+            border-bottom: 2px solid #3b82f6;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.1);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(219, 234, 254, 0.7) 0%, rgba(239, 246, 255, 0.7) 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="logo.jpg" alt="SS Institution logo" class="h-8 w-auto">
+                    <span class="ml-2 text-xl font-semibold text-slate-800">SS INSTITUTION</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#home" class="nav-link px-3 py-2 text-sm font-medium text-slate-700 hover:text-blue-600">Home</a>
+                        <a href="#courses" class="nav-link px-3 py-2 text-sm font-medium text-slate-700 hover:text-blue-600">Courses</a>
+                        <a href="#projects" class="nav-link px-3 py-2 text-sm font-medium text-slate-700 hover:text-blue-600">Projects</a>
+                        <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium text-slate-700 hover:text-blue-600">Contact</a>
+                         <a href="#About Us" class="nav-link px-3 py-2 text-sm font-medium text-slate-700 hover:text-blue-600">About Us</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md text-slate-600 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-slate-800 mb-6">Transform Your Future with <span class="text-blue-600">SS INSTITUTION</span></h1>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Premier technical education with industry-aligned programs in engineering and technology. Offering B.Tech, M.Tech, and specialized degree programs with flexible online and offline learning options.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#courses" class="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition duration-300">
+                            Explore Courses
+                        </a>
+                        <a href="#contact" class="px-6 py-3 border border-blue-600 text-blue-600 font-medium rounded-md hover:bg-blue-50 transition duration-300">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="logo.jpg" alt="Modern institute with AC classrooms" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- In-Demand Courses Section -->
+<section id="courses" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-slate-800 mb-4">In-Demand Courses</h2>
+            <p class="max-w-2xl mx-auto text-slate-600">Specialized courses to enhance your technical skills and career prospects</p>
+        </div>
+
+        <!-- Computer Science & Engineering -->
+        <div class="mb-12">
+            <h3 class="text-2xl font-semibold text-slate-800 mb-6 text-center">Computer Science & Engineering</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Programming Foundations -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="programming_test_automation.jpg" alt="Programming Foundations" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Programming Foundations</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• Python Programming</li>
+                        <li>• Java Core & Advanced</li>
+                        <li>• C/C++ Programming</li>
+                        <li>• Data Structures & Algorithms</li>
+                    </ul>
+                </div>
+
+                <!-- Web Development -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="webdevelopment.jfif" alt="Web Development" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Web Development</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• MERN Stack (MongoDB, Express, React, Node)</li>
+                        <li>• MEAN Stack Development</li>
+                        <li>• Full Stack Development</li>
+                        <li>• JavaScript & Advanced JS</li>
+                    </ul>
+                </div>
+
+                <!-- Data Science & AI -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="datasciennce ai.jfif" alt="Data Science & AI" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Data Science & AI</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• Machine Learning with Python</li>
+                        <li>• Deep Learning & Neural Networks</li>
+                        <li>• Data Analytics with R/Python</li>
+                        <li>• Natural Language Processing</li>
+                    </ul>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="cloud.jfif" alt="Cloud & DevOps" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Cloud & DevOps</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• AWS Cloud Practitioner</li>
+                        <li>• Azure Fundamentals</li>
+                        <li>• Docker & Kubernetes</li>
+                        <li>• CI/CD Pipeline Implementation</li>
+                    </ul>
+                </div>
+
+                <!-- Database Systems -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="database.jpg" alt="Database Systems" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Database Systems</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• SQL & NoSQL Databases</li>
+                        <li>• MongoDB Administration</li>
+                        <li>• Oracle Database</li>
+                        <li>• Big Data with Hadoop</li>
+                    </ul>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="cybersecurity.jfif" alt="Cybersecurity" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Cybersecurity</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• Ethical Hacking</li>
+                        <li>• Network Security</li>
+                        <li>• Penetration Testing</li>
+                        <li>• Cyber Forensic</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Electronics & Communication -->
+        <div>
+            <h3 class="text-2xl font-semibold text-slate-800 mb-6 text-center">Electronics & Communication</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Core Electronics -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="core electronics.jfif" alt="Core Electronics" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Core Electronics</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• Analog & Digital Electronics</li>
+                        <li>• Microcontroller Programming</li>
+                        <li>• VLSI Design</li>
+                        <li>• Embedded Systems</li>
+                    </ul>
+                </div>
+
+                <!-- Communication Systems -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="communication.png" alt="Communication Systems" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Communication Systems</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• Wireless Communication</li>
+                        <li>• 5G Technologies</li>
+                        <li>• Optical Communication</li>
+                        <li>• Satellite Communication</li>
+                    </ul>
+                </div>
+
+                <!-- Instrumentation & Control -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="instrument.jfif" alt="Instrumentation & Control" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Instrumentation & Control</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• Industrial Automation</li>
+                        <li>• PLC & SCADA Systems</li>
+                        <li>• Process Control</li>
+                        <li>• IoT Applications</li>
+                    </ul>
+                </div>
+
+                <!-- Signal Processing -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="signal.jfif" alt="Signal Processing" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Signal Processing</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• Digital Signal Processing</li>
+                        <li>• MATLAB for Engineers</li>
+                        <li>• Image Processing</li>
+                        <li>• Audio Signal Processing</li>
+                    </ul>
+                </div>
+
+                <!-- Power Electronics -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="power.jfif" alt="Power Electronics" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Power Electronics</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• Power Systems Analysis</li>
+                        <li>• Renewable Energy Systems</li>
+                        <li>• Electric Vehicles Technology</li>
+                        <li>• Smart Grid Technologies</li>
+                    </ul>
+                </div>
+
+                <!-- Robotics & Automation -->
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <img src="robo.jfif" alt="Robotics & Automation" class="w-full h-40 object-cover rounded-md mb-4">
+                    <h4 class="text-lg font-medium text-slate-800 mb-2">Robotics & Automation</h4>
+                    <ul class="text-sm text-slate-600 space-y-1">
+                        <li>• Robotics Fundamentals</li>
+                        <li>• Industrial Robotics</li>
+                        <li>• AI in Robotics</li>
+                        <li>• Mechatronics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200">
+                Request Course Syllabus
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+             <h2 class="text-3xl font-bold text-slate-800 mb-4">Final Year Projects & Research</h2>
+                <p class="max-w-2xl mx-auto text-slate-600">Hands-on projects that bridge the gap between academia and industry requirements</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-blue-50 p-8 rounded-xl border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <img src="lang.png" alt="Icon depicting real-time project collaboration between students and industry" class="h-12 w-12 mr-4">
+                        <h3 class="text-xl font-semibold text-slate-800">Industry-Sponsored Projects</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">Collaborate with leading tech companies on real-world problems:</p>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>6-month duration with industry mentorship</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Solve actual business challenges</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Potential for pre-placement offers</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-xl border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <img src="research.jpeg" alt="Research icon with microscope and documentation" class="h-12 w-12 mr-4">
+                        <h3 class="text-xl font-semibold text-slate-800">Research Projects</h3>
+                    </div>
+                    <p class="text-slate-600 mb-4">Work with faculty on cutting-edge research areas:</p>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Original research in emerging technologies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Opportunity for publication in journals</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Presentations at national conferences</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <h3 class="text-2xl font-semibold text-slate-800 mb-6">Recent Project Areas</h3>
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="font-medium text-slate-800">AI-Based Medical Diagnosis</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="font-medium text-slate-800">IoT Smart Agriculture</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="font-medium text-slate-800">Autonomous Robotics</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="font-medium text-slate-800">Blockchain Applications</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="font-medium text-slate-800">5G Network Optimization</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="font-medium text-slate-800">Cybersecurity Systems</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="font-medium text-slate-800">Renewable Energy Solutions</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="font-medium text-slate-800">AR/VR Applications</h4>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">
+                    Get Project Guidelines
+                    <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Contact SS Institution</h2>
+                <p class="max-w-2xl mx-auto text-slate-600">Get in touch with our admissions team for program details, fee structure, and counseling</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-700">Full Name</label>
+                            <div class="mt-1">
+                                <input type="text" name="name" id="name" class="py-3 px-4 block w-full rounded-md border border-slate-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your name">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700">Email Address</label>
+                            <div class="mt-1">
+                                <input type="email" name="email" id="email" class="py-3 px-4 block w-full rounded-md border border-slate-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-slate-700">Phone Number</label>
+                            <div class="mt-1">
+                                <input type="tel" name="phone" id="phone" class="py-3 px-4 block w-full rounded-md border border-slate-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="program" class="block text-sm font-medium text-slate-700">Program of Interest</label>
+                            <div class="mt-1">
+                                <select id="program" name="program" class="py-3 px-4 block w-full rounded-md border border-slate-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                                    <option>Select a program</option>
+                                    <option>B.Tech (Computer Science)</option>
+                                    <option>B.Tech (Electronics)</option>
+                                    <option>M.Tech (Computer Science)</option>
+                                    <option>M.Tech (VLSI Design)</option>
+                                    <option>B.Sc (Computer Science)</option>
+                                    <option>BCA (Computer Applications)</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+                            <div class="mt-1">
+                                <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full rounded-md border border-slate-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your query"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-semibold text-slate-800 mb-4">Contact Information</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <svg class="h-6 w-6 text-blue-500 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-slate-800">Institute Address</h4>
+                                    <p class="text-slate-600">2ND FLOOR, 45-40-33, Akkayyapalem Main Rd, behind SAIBABA TEMPLE, Akkayyapalem, Visakhapatnam, Andhra Pradesh 530016</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg class="h-6 w-6 text-blue-500 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-slate-800">Phone Numbers</h4>
+                                    <p class="text-slate-600">Admissions: +91 8106493335</p>
+                                    <p class="text-slate-600">General Enquiry: +91 9573467931</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg class="h-6 w-6 text-blue-500 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-medium text-slate-800">Email Addresses</h4>
+                                    <p class="text-slate-600">Admissions: info@ssinstitution.com</p>
+                                    <p class="text-slate-600">General: info@ssinstitution.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <h3 class="text-xl font-semibold text-slate-800 mb-4">Visit Our Institute</h3>
+
+                        <!-- Image Grid -->
+                        <div class="grid grid-cols-2 gap-2 mb-4 w-[70%]">
+                            <img src="classroom.jpg" alt="AC classroom" class="w-full h-auto rounded-lg object-cover">
+                            <img src="institute.jpg" alt="AC classroom" class="w-full h-auto rounded-lg object-cover">
+                            <img src="classroom3.jpg" alt="AC classroom" class="w-full h-auto rounded-lg object-cover">
+                            <img src="awards.jpg" alt="AC classroom" class="w-full h-auto rounded-lg object-cover">
+                            <img src="classroom2.jpg" alt="AC classroom" class="w-full h-auto rounded-lg object-cover">
+                        </div>
+
+                        <p class="text-slate-600 mb-4">We welcome visitors Monday to Saturday, 9:00 AM to 5:00 PM.</p>
+
+                        <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200">
+                            Schedule Appointment
+                            <svg class="ml-1 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+<section id="About Us" class="py-16 bg-slate-50">         
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-slate-800 mb-4">About Us</h2>
+            <p class="max-w-2xl mx-auto text-slate-600">SS Institution was founded in 2015 by Mr. Sathi Reddy with a vision to empower the next generation of professionals. The primary goal of the institution is to train graduating students in highly demanding and industry-relevant courses. From its inception, SS Institution has focused on bridging the gap between academic knowledge and real-world job skills. It offers specialized training programs that are designed to enhance the employability of students across various sectors. The institution believes in practical, hands-on learning guided by experienced mentors and industry experts. Over the years, it has helped hundreds of students shape their future and secure high-growth careers. SS Institution is known for its commitment to quality education and student success. It constantly updates its curriculum to match the evolving needs of the industry. With a strong foundation and forward-thinking approach, the institution continues to grow as a trusted name in career-oriented education. SS Institution stands as a launchpad for students to achieve their dreams and build a successful future.</p>
+        </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Academics</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">On Hand Pratice</a></li>
+                        <li><a href="#" class="hover:text-white transition">Theory Knowledge</a></li>
+                        <li><a href="#" class="hover:text-white transition">Offline Learning</a></li>
+                        <li><a href="#" class="hover:text-white transition">Online Learning</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Admissions</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Application Process</a></li>
+                        <li><a href="#" class="hover:text-white transition">Fee Structure</a></li>
+                        <li><a href="#" class="hover:text-white transition">Scholarships</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-slate-300 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-slate-300 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-slate-300 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-slate-300 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-slate-300 hover:text-white">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.215 1.443-1.186 4.48-2.141 1.925 3.072 3.262 5.093 3.402 5.314a8.487 8.487 0 01-2.643.627zm3.115-2.806c.126-.13 2.249-2.345 4.926-3.775A8.575 8.575 0 0120.547 12c0 .37-.03.736-.084 1.095-1.825 1.238-4.942 2.652-6.884 2.956-.07.011-.141.022-.221.036z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <h3 class="text-white text-lg font-semibold mb-2">Subscribe to Newsletter</h3>
+                        <form class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-md focus:outline-none w-full text-slate-800">
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md text-white font-medium">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-slate-700 text-center">
+                <p class="text-sm text-slate-400">&copy; 2015 SS Institution. All rights reserved.</p>
+                <p class="text-sm text-slate-400 mt-2">A premier technical education institute offering B.Tech, M.Tech, and specialized programing courses</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            // Add your mobile menu toggle logic here
+            console.log('Mobile menu toggle clicked');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
