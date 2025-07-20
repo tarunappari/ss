@@ -1,8 +1,44 @@
 'use client';
 
 import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
 
 const CoursesSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [visibleCards, setVisibleCards] = useState(new Set());
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      const timer = setTimeout(() => {
+        const cards = document.querySelectorAll('.course-card');
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            setVisibleCards(prev => new Set([...prev, index]));
+          }, index * 150);
+        });
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, [isVisible]);
+
   const computerScienceCourses = [
     {
       title: "Programming Foundations",
@@ -142,7 +178,13 @@ const CoursesSection = () => {
   ];
 
   const CourseCard = ({ course, index, bgColor }) => (
-    <div className={`${bgColor} rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border border-gray-100`}>
+    <div
+      className={`course-card ${bgColor} rounded-xl shadow-lg hover:shadow-xl transition-all duration-700 transform hover:-translate-y-2 overflow-hidden border border-gray-100 opacity-0 translate-y-8 ${visibleCards.has(index) ? 'animate-fade-in-up' : ''}`}
+      style={{
+        animationDelay: `${index * 150}ms`,
+        animationFillMode: 'forwards'
+      }}
+    >
       {/* Course Image */}
       <div className="relative h-48 w-full">
         <Image
@@ -175,23 +217,23 @@ const CoursesSection = () => {
   );
 
   return (
-    <section id='courses' className="py-20 bg-gray-50 coursesSection">
-      <div className='underCoursesSection'>
-        <h1>In-Demand Courses</h1>
-        <p>Specialized courses to enhance your technical skills and career prospects</p>
+    <section id='courses' className="py-20 bg-gray-50 coursesSection" ref={sectionRef}>
+      <div className={`underCoursesSection transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <h1 className="animate-slide-in-left">In-Demand Courses</h1>
+        <p className="animate-slide-in-right">Specialized courses to enhance your technical skills and career prospects</p>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Computer Science Courses Section */}
         <div className="mb-20">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
+          <div className={`text-center mb-12 transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4 animate-bounce-in">
               <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Computer Science Courses</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-slide-in-left">Computer Science Courses</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-in-right">
               Master the latest technologies and programming languages with our comprehensive computer science curriculum
             </p>
           </div>
@@ -210,14 +252,14 @@ const CoursesSection = () => {
 
         {/* Electronics Courses Section */}
         <div>
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mb-4">
+          <div className={`text-center mb-12 transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mb-4 animate-bounce-in">
               <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Electronics & Communication Courses</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-slide-in-left">Electronics & Communication Courses</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-in-right">
               Explore cutting-edge electronics and communication technologies with hands-on practical experience
             </p>
           </div>

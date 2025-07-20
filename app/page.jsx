@@ -9,13 +9,14 @@ import ProjectsSection from "@/components/ProjectsSection";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      ss
+      {/* <Navbar />
       <HeroSection />
       <AboutSection />
       <CoursesSection />
       <ProjectsSection />
       <ContactSection />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

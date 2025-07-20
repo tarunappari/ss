@@ -1,22 +1,29 @@
 'use client';
 
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const HeroSection = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
     <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
-          <div className="space-y-8">
+          <div className={`space-y-8 transition-all duration-1000 transform ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'}`}>
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-slide-in-left">
                 Transform Your
-                <span className="text-blue-600 block">Career Today</span>
+                <span className="text-blue-600 block animate-slide-in-right">Career Today</span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                Join thousands of students who have advanced their careers with our 
-                industry-leading courses. Learn from experts and get certified in 
+              <p className="text-xl text-gray-600 leading-relaxed max-w-lg animate-fade-in-up">
+                Join thousands of students who have advanced their careers with our
+                industry-leading courses. Learn from experts and get certified in
                 the most in-demand skills.
               </p>
             </div>
@@ -50,11 +57,11 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg hover:shadow-xl">
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 animate-pulse-hover">
                 Start Learning Today
               </button>
-              <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-200">
+              <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:-translate-y-1">
                 View All Courses
               </button>
             </div>
@@ -77,10 +84,10 @@ const HeroSection = () => {
           </div>
 
           {/* Right side - Image */}
-          <div className="relative">
+          <div className={`relative transition-all duration-1000 transform ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
             <div className="relative z-10">
               {/* Main hero image */}
-              <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl animate-bounce-in">
                 <Image
                   src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
                   alt="Students learning online"
